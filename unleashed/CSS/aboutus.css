@@ -1,0 +1,307 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    text-align: center;
+}
+
+.black{
+    color: black;
+}
+
+/* BRAND NAME & STORY */
+.container1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+.story {
+    margin-top: -100px;
+    max-width: 800px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+    border:10px solid rgb(189, 188, 188);
+}
+
+/* SLIDER 1 */
+.container2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+}
+
+.abtpic{
+    display: flex;
+    justify-self: center;
+    align-items: center ;
+    width: 1000px;
+    height: 650px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 50px 10px;
+}
+
+h4{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.container3 h1{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.brandmv{
+    width: 500px;
+}
+
+/* LOGO, PICTURE & TEXTS FOR CONTAINER 4 */
+.picture{
+    grid-area: box1;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(0, 0, 0,0.7);
+    border-radius: 50px;
+}
+
+/* IMAGE SIZE */
+.loc{
+    width: 500px;
+    height: 500px;
+}
+
+.logo , .text{
+    width: 500px;
+    height: 250px;
+}
+
+.logo img{
+    width: 500px;
+    height: 250px;
+}
+
+.logo{
+    grid-area: box2;
+}
+
+.text{
+    grid-area: box3;
+}
+
+.container4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "box1 box2"
+    "box1 box3";
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.socmed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.socmedlogo{
+    width: 50px;
+    height: 50px;
+    transition: 1s ease;
+}
+
+.socmedlogo:hover{
+    transform: scale(1.2);
+}
+
+.container5{
+    position: relative;
+    background-size: 1300px;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.container5::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/unleashed/Images/UNLCLOBLACK.png);
+    background-size: 1300px;
+    background-position: center;
+    background-repeat: no-repeat;   
+    opacity: 0.07;
+    z-index: -1;
+}
+
+hr {
+    width: 100%;
+    border-top:5px solid black;
+}
+
+@keyframes fade {
+    10%{
+        opacity: 0.5;
+        scale: 0.5;
+    }
+    50%{
+        opacity: 1;
+        scale: 1;
+    }
+    100%{
+        opacity: 0.5;
+        scale: 0.5;
+    }
+}
+
+.container1,.container2,.container3,.container4,.container5{
+    animation: fade linear;
+    animation-timeline: view();
+}
+
+/* VIEWPORT FOR 320px ( MOBILE ) */
+@media (max-width: 420px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container1 {
+        margin-top: 20px;
+    }
+
+    .container1 h1 {
+        margin-top: -300px;
+    }
+
+    .story {
+        width: 85%;
+        box-sizing: border-box;
+        margin: -300px auto 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: justify;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+    }
+
+    .abtpic {
+        width: 100%;
+        height: auto;
+    }
+
+    .container2 {
+        margin-top: 20px;
+    }
+
+    .slider1 {
+        width: 90%;
+        max-width: 300px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .slidepicture {
+        border-radius: 20px;
+    }
+
+    .prev, .next {
+        font-size: 1.2rem;
+        padding: 4px 10px;
+    }
+
+    .radionav {
+        width: auto;
+    }
+
+    .radionav label {
+        font-size: 1rem;
+        margin: 0 5px;
+    }
+
+    .container3 {
+        margin: 20px 5px;
+    }
+
+    h4 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .container3 h1 {
+        font-size: 1rem;
+    }
+
+    .container4 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3";
+        gap: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .loc {
+        width: 100%;
+        height: auto;
+    }
+
+    .container5 {
+        margin-top: 200px;
+        background-size: contain;
+    }
+
+    .container5::before {
+        background-size: contain;
+    }
+
+    .picture {
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+    }
+
+    .logo, .text {
+        width: 250px;
+        height: 125px;
+    }
+
+    .logo img {
+        width: 250px;
+        height: 125px;
+        object-fit: contain;
+    }
+
+    .container1, .container2, .container3, .container4, .container5 {
+        animation: none;
+        opacity: 1;
+        scale: 1;
+    }
+    
+    .socmedlogo:hover {
+        transform: none;
+    }
+}

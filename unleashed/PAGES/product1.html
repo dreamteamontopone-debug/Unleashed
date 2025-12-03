@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UNLEASHED CLO.</title>
+  <link rel="stylesheet" href="/unleashed/CSS/product.css">
+</head>
+<body>
+  <header class="header">
+    <a href="javascript:history.back()" class="back-button" aria-label="Go back">
+      &#8592;
+    </a>
+    <a href="/unleashed/index.html"><img src="/unleashed/Images/UNLCLOBLACK.png" alt="UNLEASHED Logo" class="logo" /></a>
+  </header>
+
+  <div class="container">
+    <div class="subcon1">
+        <div class="prod">
+          <img src="/unleashed/Images/PRODUCT 1.png" alt="" class="productimg" id="thumbnail">
+          
+          <div id="modal" class="modal">
+            <span id="close" class="close">&times;</span>
+            <img src="/unleashed/Images/PRODUCT 1.png" alt="" id="modal-image" class="modal-content">
+          </div>
+        
+        </div>
+        <div class="buttons">
+      <h3 id="item-name">Drop Basic Tee - White</h3>
+      <h1>₱549.00</h1>
+      <div class="keys">
+          
+        <div class="dropdown-container">
+            <button class="clicks dropbtn" id="size">Size <span id="selectedSize"></span></button>
+            <div id="sizeDropdown" class="dropdown-content">
+                <a href="#" data-value="XS">XS</a>
+                <a href="#" data-value="S">S</a>
+                <a href="#" data-value="M">M</a>
+                <a href="#" data-value="L">L</a>
+                <a href="#" data-value="XL">XL</a>
+                <a href="#" data-value="XXL">XXL</a>
+                <a href="#" data-value="XXXL">XXXL</a>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <button class="clicks dropbtn" id="colors">Colors <span id="selectedColors"></span></button>
+            <div id="colorsDropdown" class="dropdown-content">
+                <a href="#" data-value="White">White</a>
+                <a href="#" data-value="Black">Black</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="subcon2">
+      <div class="desc">
+        <h2>Description:</h2>
+          <h3 id="item-color">Color: White</h3>
+          <h3 id="item-design">Graphic/Design: Large "Unleashed" Logo printed in front (Color : Navy Blue).</h3>
+          <h3>Fit: Relaxed / Standard Fit</h3>
+          <h3>Material: Cotton</h3>
+          <h3>Style: Minimalist Streetwear</h3>  
+      </div>
+  </div>
+
+  <div class="container2">
+    <div class="text">
+      <h2>Try our other products!</h2>
+    </div>
+
+    <div class="productimage">
+      <div class="products" data-id="5">
+        <img src="/unleashed/Images/WHITE CAP.png" alt="" class="suggimg">
+        <h3>Unleashed Cap V1 Gray</h3>
+        <h2>Price : ₱199.00</h2>
+      </div>
+      <div class="products" data-id="3">
+        <img src="/unleashed/Images/PRODUCT 3.jpeg" alt="" class="suggimg">
+        <h3>Acid Wash Embroided</h3>
+        <h2>Price : ₱549.00</h2>
+      </div>
+      <div class="products" data-id="4">
+        <img src="/unleashed/Images/PRODUCT 4.png" alt="" class="suggimg">
+        <h3>Turtle Neck Tee</h3>
+        <h2>Price : ₱549.00</h2>
+      </div>
+    </div>
+    
+  </div>
+  <script src="/unleashed/JS/viewproduct.js"></script>
+  <script src="/unleashed/JS/productbutton.js"></script>
+  <script src="/unleashed/JS/prodclick.js"></script>
+</body>
+</html>
