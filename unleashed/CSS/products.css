@@ -37,17 +37,17 @@ body{
 
 /* BACKGROUND IMAGE FOR THE PRODUCTS CATEGORY */
 .allproducts{
-    background-image: url(/Unleashed/Images/COLLAGE\ ALL.png);
+    background-image: url(/unleashed/Images/COLLAGE\ ALL.png);
     background-size: cover;
 } 
 
 .tshirt{
-    background-image: url(/Unleashed/Images/COLLAGE\ SHIRTS.png);
+    background-image: url(/unleashed/Images/COLLAGE\ SHIRTS.png);
     background-size: cover;
 }
 
 .headwear{
-    background-image: url(/Unleashed/Images/COLLAGE\ CAPS.png);
+    background-image: url(/unleashed/Images/COLLAGE\ CAPS.png);
     background-size: cover;
 }
 
