@@ -85,10 +85,11 @@ a {
     }
 
     .contactsF {
-       margin-left: 0;
-       width: auto;
-       justify-content: center;
-       gap: 10px;
+        display: flex;
+        margin-left: 0;
+        width: auto;
+        justify-content: center;
+        gap: 10px;
     }
 
     .contacts {
