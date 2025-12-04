@@ -190,6 +190,11 @@ hr {
         margin-top: -300px;
     }
 
+    .brandmv {
+        width: 100%;
+        height: auto;
+    }
+
     .story {
         width: 85%;
         box-sizing: border-box;
