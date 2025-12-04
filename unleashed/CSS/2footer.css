@@ -89,7 +89,8 @@ a {
     }
 
     .contacts {
-        width: 30px;
+        place-self: center;
+        width: 35px;
         height: 35px;
     }
 

@@ -80,7 +80,9 @@
     }
     
     .LogoH {
-        margin-left: 8rem;
+        place-self: center;
+        justify-self: center;
+        transform: scale(1.1);
     }
 
     /* SHOW MENU LIST */
