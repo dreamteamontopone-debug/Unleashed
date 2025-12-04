@@ -96,6 +96,8 @@
         background-color: black;
         color: white;
         border-radius: 5px;
+        justify-content: center;
+        align-items: center;
     }
     
     /* HIDE MENU WHEN WEBSITE IS LOADED ( MOBILE ONLY ) */
